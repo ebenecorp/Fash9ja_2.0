@@ -55,4 +55,17 @@
                     type="text"
                     placeholder="Enter store currency symbol"
                     id="currency_symbol"
- 
+                    name="currency_symbol"
+                    value="{{ config('settings.currency_symbol') }}"
+                />
+            </div>
+        </div>
+        <div class="tile-footer">
+            <div class="row d-print-none mt-2">
+                <div class="col-12 text-right">
+                    <button class="btn btn-success" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Update Settings</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>  
