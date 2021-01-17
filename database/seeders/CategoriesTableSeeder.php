@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Category;
 
+
 class CategoriesTableSeeder extends Seeder
 {
     /**
@@ -22,6 +23,9 @@ class CategoriesTableSeeder extends Seeder
             'menu'          =>  0,
         ]);
 
-        factory('App\Models\Category', 10)->create();
+        // factory('App\Models\Category', 10)->create();
+        Category::factory()
+            ->count(10)
+            ->create();
     }
 }
